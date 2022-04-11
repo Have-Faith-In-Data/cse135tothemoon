@@ -1,0 +1,37 @@
+html {
+	height: 99%;
+}
+
+body {
+	height: 99%;
+	margin: 0;
+	padding: 0;
+	line-height: 150%;
+}
+
+#content {
+  margin: 0 auto;
+  width: 1000px;
+  background-color: #f3f3f3;
+}
+
+#desc {
+  width: 100%;
+}
+
+#repos {
+  margin: 2em auto;
+  width: 85%;
+  text-align: center;
+}
+
+.repo {
+  margin: auto 2em;
+  width: 50%;
+  opacity: 0.85;
+}
+
+html,
+/* body {
+	text-align: center;
+} */
