@@ -2,6 +2,8 @@
 
 $commands = array(
 	'echo $PWD',
+    'sudo -s',
+    'cse135Develop',
 	'whoami',
 	'git pull',
 	'git status',
@@ -20,9 +22,9 @@ foreach($commands AS $command){
     // Run it
     $tmp = shell_exec("$command 2>&1");
     // Output
-    $output .= "<span style=\"color: #6BE234;\">\$</span> <span style=\"color: #729FCF;\">{$command}\n</span>";
+    $output .= "<span style=\"color: #6BE234;\">\$</span> <span style=\"color: #729FCF;\">{$command}<br/></span>";
     
-    $output .= htmlentities(trim($tmp)) . "\n";
+    $output .= htmlentities(trim($tmp)) . "<br/>";
 
     $log  = "\$ $command\n".trim($tmp)."\n";
     file_put_contents ('deploy-log.txt', $log, FILE_APPEND);
