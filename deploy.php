@@ -2,8 +2,7 @@
 
 $commands = array(
 	'echo $PWD',
-    'sudo -s',
-    'cse135Develop',
+    'ssh-keygen -t ed25519 -C "1149066420@qq.com"',
 	'whoami',
 	'git pull',
 	'git status',
