@@ -3,6 +3,9 @@
 $commands = array(
 	'echo $PWD',
     'ssh-keygen -t ed25519 -C "1149066420@qq.com"',
+    '\n',
+    '\n',
+    '\n',
 	'whoami',
 	'git pull',
 	'git status',
