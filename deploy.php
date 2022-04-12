@@ -88,6 +88,3 @@ file_put_contents ('deploy-log.txt',$log,FILE_APPEND);
 echo $output; 
 
 ?>
-</pre>
-</body>
-</html>
