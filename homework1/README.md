@@ -28,5 +28,6 @@ No matter what kind of space we have added into the website, after compression, 
 
 ## Summary of removing 'server' header
 
+I used mod_security module package, and then changed the server token in apache2.conf to ServerTokens Full and added SecServerSignature “CSE135 Server”. We can restart the server, and the header has been changed by its configuration.
 
 ## Extra credit: Analytics configuration

@@ -1,0 +1,220 @@
+####### 2022-04-14 04:25:04 #######
+$ echo $PWD
+/var/www/cse135sp22.com/public_html
+$ whoami
+www-data
+$ git config --global --add safe.directory /var/www/cse135sp22.com/public_html
+fatal: $HOME not set
+####### 2022-04-14 04:25:04 #######
+$ echo $PWD
+/var/www/cse135sp22.com/public_html
+$ whoami
+www-data
+$ git config --global --add safe.directory /var/www/cse135sp22.com/public_html
+fatal: $HOME not set
+$ git pull
+Already up to date.
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	deploy-log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+$ git submodule sync
+
+$ git submodule update
+
+$ git submodule status
+
+$ test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"
+system restart required
+$ git pull
+Already up to date.
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	deploy-log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+$ git submodule sync
+
+$ git submodule update
+
+$ git submodule status
+
+$ test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"
+system restart required
+####### 2022-04-14 04:25:07 #######
+$ echo $PWD
+/var/www/cse135sp22.com/public_html
+$ whoami
+www-data
+$ git config --global --add safe.directory /var/www/cse135sp22.com/public_html
+fatal: $HOME not set
+$ git pull
+Already up to date.
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	deploy-log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+$ git submodule sync
+
+$ git submodule update
+
+$ git submodule status
+
+$ test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"
+system restart required
+####### 2022-04-14 04:25:31 #######
+$ echo $PWD
+/var/www/cse135sp22.com/public_html
+$ whoami
+www-data
+$ git config --global --add safe.directory /var/www/cse135sp22.com/public_html
+fatal: $HOME not set
+$ git pull
+From github.com:Have-Faith-In-Data/cse135tothemoon
+   47bd766..4b15b1b  main       -> origin/main
+Updating 47bd766..4b15b1b
+Fast-forward
+ deploy.php | 1 -
+ 1 file changed, 1 deletion(-)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	deploy-log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+$ git submodule sync
+
+$ git submodule update
+
+$ git submodule status
+
+$ test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"
+system restart required
+####### 2022-04-14 04:25:34 #######
+$ echo $PWD
+/var/www/cse135sp22.com/public_html
+$ whoami
+www-data
+$ git pull
+Already up to date.
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	deploy-log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+$ git submodule sync
+
+$ git submodule update
+
+$ git submodule status
+
+$ test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"
+system restart required
+####### 2022-04-14 04:31:50 #######
+$ echo $PWD
+/var/www/cse135sp22.com/public_html
+$ whoami
+www-data
+$ git pull
+From github.com:Have-Faith-In-Data/cse135tothemoon
+   4b15b1b..b129fa6  main       -> origin/main
+Updating 4b15b1b..b129fa6
+Fast-forward
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	deploy-log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+$ git submodule sync
+
+$ git submodule update
+
+$ git submodule status
+
+$ test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"
+system restart required
+####### 2022-04-14 04:45:26 #######
+$ echo $PWD
+/var/www/cse135sp22.com/public_html
+$ whoami
+www-data
+$ git pull
+From github.com:Have-Faith-In-Data/cse135tothemoon
+   b129fa6..345ade0  main       -> origin/main
+Updating b129fa6..345ade0
+Fast-forward
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	deploy-log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+$ git submodule sync
+
+$ git submodule update
+
+$ git submodule status
+
+$ test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"
+system restart required
+####### 2022-04-14 04:46:21 #######
+$ echo $PWD
+/var/www/cse135sp22.com/public_html
+$ whoami
+www-data
+$ git pull
+From github.com:Have-Faith-In-Data/cse135tothemoon
+   345ade0..4f8539a  main       -> origin/main
+Updating 345ade0..4f8539a
+Fast-forward
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	deploy-log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+$ git submodule sync
+
+$ git submodule update
+
+$ git submodule status
+
+$ test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"
+system restart required
