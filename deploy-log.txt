@@ -218,3 +218,140 @@ $ git submodule status
 
 $ test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"
 system restart required
+####### 2022-04-14 05:10:57 #######
+$ echo $PWD
+/var/www/cse135sp22.com/public_html
+$ whoami
+www-data
+$ git pull
+Already up to date.
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   deploy-log.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+$ git submodule sync
+
+$ git submodule update
+
+$ git submodule status
+
+$ test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"
+system restart required
+####### 2022-04-14 05:12:30 #######
+$ echo $PWD
+/var/www/cse135sp22.com/public_html
+$ whoami
+www-data
+$ git pull
+From github.com:Have-Faith-In-Data/cse135tothemoon
+   78e6386..a518b66  main       -> origin/main
+error: unable to unlink old 'homework1/README.md': Permission denied
+Updating 78e6386..a518b66
+$ git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   deploy-log.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+$ git submodule sync
+
+$ git submodule update
+
+$ git submodule status
+
+$ test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"
+system restart required
+####### 2022-04-14 05:15:31 #######
+$ echo $PWD
+/var/www/cse135sp22.com/public_html
+$ whoami
+www-data
+$ git pull
+From github.com:Have-Faith-In-Data/cse135tothemoon
+   a518b66..31fcb2b  main       -> origin/main
+warning: unable to unlink 'homework1/README.md': Permission denied
+warning: unable to unlink 'homework1/compress-verify.jpg': Permission denied
+warning: unable to unlink 'homework1/error-page.jpg': Permission denied
+warning: unable to unlink 'homework1/github-deploy.mpeg': Permission denied
+warning: unable to unlink 'homework1/header-verify. jpg.png': Permission denied
+warning: unable to unlink 'homework1/header-verify.jpg': Permission denied
+warning: unable to unlink 'homework1/hello.php': Permission denied
+warning: unable to unlink 'homework1/initial-index.jpg': Permission denied
+warning: unable to unlink 'homework1/log-verification.jpg': Permission denied
+warning: unable to unlink 'homework1/modified-index.jpg': Permission denied
+warning: unable to unlink 'homework1/php-verification.jpg': Permission denied
+warning: unable to unlink 'homework1/report-verification.jpg': Permission denied
+warning: unable to unlink 'homework1/ssl-verify.jpg': Permission denied
+warning: unable to unlink 'homework1/validator-initial.jpg': Permission denied
+warning: unable to unlink 'homework1/vhosts-verify.jpg': Permission denied
+Updating 78e6386..31fcb2b
+Fast-forward
+ {homework1 => hw1}/README.md                    |   4 ++--
+ {homework1 => hw1}/compress-verify.jpg          | Bin
+ {homework1 => hw1}/error-page.jpg               | Bin
+ {homework1 => hw1}/github-deploy.mpeg           | Bin
+ {homework1 => hw1}/header-verify. jpg.png       | Bin
+ {homework1 => hw1}/header-verify.jpg            | Bin
+ {homework1 => hw1}/hello.php                    |   0
+ {homework1 => hw1}/initial-index.jpg            | Bin
+ {homework1 => hw1}/log-verification.jpg         | Bin
+ {homework1 => hw1}/modified-index.jpg           | Bin
+ {homework1 => hw1}/php-verification.jpg         | Bin
+ {homework1 => hw1}/report-verification.jpg      | Bin
+ {homework1 => hw1}/ssl-verify.jpg               | Bin
+ {homework1 => hw1}/validator-initial.jpg        | Bin
+ {homework1 => hw1}/vhosts-verify.jpg            | Bin
+ index.html                                      |   2 +-
+ members/shikanchen_files/auto 2.js              |  17 +++++++++++++++++
+ members/shikanchen_files/favicon_io/about 2.txt |   6 ++++++
+ 18 files changed, 26 insertions(+), 3 deletions(-)
+ rename {homework1 => hw1}/README.md (74%)
+ rename {homework1 => hw1}/compress-verify.jpg (100%)
+ rename {homework1 => hw1}/error-page.jpg (100%)
+ rename {homework1 => hw1}/github-deploy.mpeg (100%)
+ rename {homework1 => hw1}/header-verify. jpg.png (100%)
+ rename {homework1 => hw1}/header-verify.jpg (100%)
+ rename {homework1 => hw1}/hello.php (100%)
+ rename {homework1 => hw1}/initial-index.jpg (100%)
+ rename {homework1 => hw1}/log-verification.jpg (100%)
+ rename {homework1 => hw1}/modified-index.jpg (100%)
+ rename {homework1 => hw1}/php-verification.jpg (100%)
+ rename {homework1 => hw1}/report-verification.jpg (100%)
+ rename {homework1 => hw1}/ssl-verify.jpg (100%)
+ rename {homework1 => hw1}/validator-initial.jpg (100%)
+ rename {homework1 => hw1}/vhosts-verify.jpg (100%)
+ create mode 100755 members/shikanchen_files/auto 2.js
+ create mode 100644 members/shikanchen_files/favicon_io/about 2.txt
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   deploy-log.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	homework1/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+$ git submodule sync
+
+$ git submodule update
+
+$ git submodule status
+
+$ test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"
+system restart required
