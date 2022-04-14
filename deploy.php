@@ -3,7 +3,6 @@
 $commands = array(
 	'echo $PWD',
 	'whoami',
-    'git config --global --add safe.directory /var/www/cse135sp22.com/public_html',
 	'git pull',
 	'git status',
 	'git submodule sync',
