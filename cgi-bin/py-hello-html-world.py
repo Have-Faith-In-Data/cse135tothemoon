@@ -1,17 +1,18 @@
-#!/usr/bin/py
+#!/usr/bin/python3
+
 from datetime import datetime
 import socket
 
-print( "Cache-Control: no-cache\n")
+print( "Cache-Control: no-cache")
 print( "Content-type: text/html\n\n")
 print( "<html>")
 print( "<head>")
-print( "<title>Hello, Perl!</title>")
+print( "<title>Hello, Python!</title>")
 print( "</head>")
 print( "<body>")
 
-print( "<h1>Thomas was here - Hello, Perl!</h1>")
-print( "<p>This page was generated with the Perl programming langauge</p>")
+print( "<h1>Thomas was here - Hello, Python!</h1>")
+print( "<p>This page was generated with the Python programming langauge</p>")
 
 date = datetime.now()  
 print( "<p>Current Time: {d}</p>".format(d = date))
