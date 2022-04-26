@@ -11,7 +11,7 @@ print( "<title>Hello, Python!</title>")
 print( "</head>")
 print( "<body>")
 
-print( "<h1>Thomas was here - Hello, Python!</h1>")
+print( "<h1>Steve and Jason were here - Hello, Python!</h1>")
 print( "<p>This page was generated with the Python programming langauge</p>")
 
 date = datetime.now()  
