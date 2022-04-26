@@ -4,7 +4,7 @@ from datetime import datetime
 import socket
 import os 
 
-print( "Cache-Control: no-cache\n")
+print( "Cache-Control: no-cache")
 print( "Content-type: text/html\n\n")
 print( "<html>")
 print( "<head>")

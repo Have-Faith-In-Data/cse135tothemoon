@@ -1,9 +1,9 @@
-#!/usr/bin/py
+#!/usr/bin/python3
 
 from datetime import datetime
 import socket
 
-print( "Cache-Control: no-cache\n")
+print( "Cache-Control: no-cache")
 print( "Content-type: text/html\n\n")
 print( "<html>")
 print( "<head>")
