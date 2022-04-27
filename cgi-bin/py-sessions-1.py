@@ -9,12 +9,10 @@ import cgi, cgitb
 
 
 print( "Cache-Control: no-cache")
-print( "Content-type: text/html\n")
-
-
+print( "Content-type: text/html")
 username = sys.stdin.readlines() 
 if len(username) > 0: 
-    print("Set-Cookie: %s\n\n"%username)
+    print("Set-Cookie: username=%s\n\n"%username)
 
 
 # Headers
@@ -31,8 +29,8 @@ print( "<h1>Sessions Page 1</h1>")
 print("<table>")
 if len(username) > 0 : 
     print("<tr><td>Cookie:</td><td>",username,"</td></tr>\n")
-elif "HTTP_COOKIE" in os.environ  and os.environ["HTTP_COOKIE"] == "destroyed":
-    print("<tr><td>Cookie:</td><td>",os.environ["HTTP_COOKIE"],"</td></tr>\n")
+elif "HTTP_COOKIE" in os.environ  and os.environ["HTTP_COOKIE"] != "destroyed":
+    print("<tr><td>Cookie from Cookie:</td><td>",os.environ["HTTP_COOKIE"],"</td></tr>\n")
 else: 
     print("<tr><td>Cookie:</td><td>None</td></tr>\n")
 print("</table>")
@@ -41,7 +39,7 @@ print("</table>")
 print("<br />")
 print("<a href=\"/cgi-bin/py-sessions-2.py\">Session Page 2</a>")
 print("<br />")
-print("<a href=\"/py-cgiform.html\">py CGI Form</a>")
+print("<a href=\"../hw2/py-cgiform.html\">py CGI Form</a>")
 print("<br /><br />")
 
 # Destroy Cookie button
