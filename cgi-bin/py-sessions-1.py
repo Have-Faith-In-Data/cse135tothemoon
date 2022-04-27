@@ -2,10 +2,23 @@
 
 import sys
 import os 
+<<<<<<< HEAD
+import cgi, cgitb 
+
+# form = cgi.FieldStorage()
+# Get data from fields
+# username = form.getvalue('username')
+# username = ""
+=======
+>>>>>>> c9a7054be297814f6e902e537f97a6d3c99648be
 
 print( "Cache-Control: no-cache")
 print( "Content-type: text/html\n\n")
 
+<<<<<<< HEAD
+# if len(username) > 0: 
+#     print("Set-Cookie:",username,"\n\n")
+=======
 
 username = sys.stdin.readlines() 
 
@@ -13,6 +26,7 @@ username = sys.stdin.readlines()
 
 if len(username) > 0: 
     print("Set-Cookie:",username,"\n\n")
+>>>>>>> c9a7054be297814f6e902e537f97a6d3c99648be
 
 
 
@@ -25,6 +39,17 @@ print( "</head>")
 print( "<body>")
 
 print( "<h1>Sessions Page 1</h1>")
+<<<<<<< HEAD
+print("<label>")
+print("What's Your name?")
+print("<input type='text' name='username' autocomplete='off'>")
+print("</label>")
+print("<input type='submit' value='Test Sessioning'>")
+
+
+
+=======
+>>>>>>> c9a7054be297814f6e902e537f97a6d3c99648be
 print("<table>")
 if len(username) > 0 : 
     print("<tr><td>Cookie:</td><td>",username,"</td></tr>\n")

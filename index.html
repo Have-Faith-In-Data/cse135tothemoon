@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>CSE 135 Team homepage</title>
-      <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-      <link rel="icon" type="image/x-icon" href="members/shikanchen_files/favicon_io/favicon.ico">
-      <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-   </head>
-   <body>
-      <div id="content">
-         <div id="box">
-            <div id="title">CSE 135 Team homepage</div>
-            <div id="teammembers">
-               <div class="teammember"><a href="members/shikanchen.html">Shikan Chen</a></div>
-               <div class="teammember"><a href="members/haotianzhang.html">Haotian Zhang</a></div>
+    <head>
+        <title>CSE 135 Team homepage</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <link rel="icon" type="image/x-icon" href="members/shikanchen_files/favicon_io/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    </head>
+    <body>
+        <div id="content">
+            <div id="box">
+                <div id="title">CSE 135 Team homepage</div>
+                <div id="teammembers">
+                    <div class="teammember"><a href="members/shikanchen.html">Shikan Chen</a></div>
+                    <div class="teammember"><a href="members/haotianzhang.html">Haotian Zhang</a></div>
+                </div>
+                <div id="sections">
+                    <div class="sectionTitle">Welcome to CSE 135 Team ToTheMoon</div>
+                    <div class="section" id="homework1">
+                        <p class="name">Homework1</p>
+                        <div class="sub"><a href="hw1/">Homework1 folder</a></div>
+                    </div>
+                    <br/>
+                    <div class="section" id="homework2">
+                        <p class="name">Homework2</p>
+                        <div class="sub">
+                            <p>Perl - CGI</p>
+                            <div class="sub-block">
+                                <a href="/cgi-bin/perl-html-world.pl">Hello,Perl!</a>
+                                <a href="/cgi-bin/perl-json-world.pl">Hello,Perl! (JSON)</a>
+                                <a href="/cgi-bin/perl-env.pl">Environment Variables (Manually)</a>
+                                <a href="/cgi-bin/perl-env-pm.pl">Environment Variables (CGI.pm)</a>
+                                <a href="/cgi-bin/perl-get-echo.pl">GET Echo</a>
+                                <a href="/cgi-bin/perl-post-echo.pl">POST Echo</a>
+                                <a href="/cgi-bin/perl-general-echo.pl">General Echo</a>
+                                <a href="/cgi-bin/perl-sessions-1.pl">Sessioning page 1 </a>
+                                <a href="/cgi-bin/perl-sessions-2.pl">Sessioning page 2 </a>
+                                <a href="/cgi-bin/perl-destroy-session.pl">Destroy session</a>
+                            </div>
+                        </div>
+                        <!--
+                            <p>C - CGI</p>
+                            <div class="sub-block">
+                               <a href="/cgi-bin/c-hello-html-world.cgi">Hello,c!</a>
+                               <a href="/cgi-bin/c-hello-json-world.cgi">Hello,c! (JSON)</a>
+                               <a href="/cgi-bin/c-env.cgi">Environment Variables</a>
+                               <a href="/cgi-bin/c-get-echo.cgi">GET Echo</a>
+                               <a href="/cgi-bin/c-post-echo.cgi">POST Echo</a>
+                               <a href="/cgi-bin/c-general-request-echo.cgi">General Echo</a>
+                               <a href="/cgi-bin/c-sessions-1.cgi">Sessioning page 1 </a>
+                               <a href="/cgi-bin/c-sessions-2.cgi">Sessioning page 2 </a>
+                               <a href="/cgi-bin/c-destroy-session.cgi">Destroy session</a>
+                            </div>
+                            -->
+                        <div class="sub">
+                            <p>Python - CGI</p>
+                            <div class="sub-block">
+                                <a href="/cgi-bin/py-hello-html-world.py">Hello,py!</a>
+                                <a href="/cgi-bin/py-hello-json-world.py">Hello,py! (JSON)</a>
+                                <a href="/cgi-bin/py-env.py">Environment Variables</a>
+                                <a href="/cgi-bin/py-get-echo.py">GET Echo</a>
+                                <a href="/cgi-bin/py-post-echo.py">POST Echo</a>
+                                <a href="/cgi-bin/c-general-request-echo.cgi">General Echo</a>
+                                <a href="/cgi-bin/py-sessions-1.py">Sessioning page 1 </a>
+                            </div>
+                        </div>
+                        <div class="sub">
+                            <p>PHP - CGI</p>
+                            <div class="sub-block">
+                                <a href="/cgi-bin/php-hello-html-world.php">Hello,php!</a>
+                                <a href="/cgi-bin/php-hello-json-world.php">Hello,php! (JSON)</a>
+                                <a href="/cgi-bin/php-env.php">Environment Variables</a>
+                                <a href="/cgi-bin/php-get-echo.php">GET Echo</a>
+                                <a href="/cgi-bin/php-post-echo.php">POST Echo</a>
+                                <a href="/cgi-bin/php-general-request-echo.cgi">General Echo</a>
+                                <a href="/cgi-bin/php-sessions-1.php">Sessioning page 1 </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="sections">
-               <div class="sectionTitle">Welcome to CSE 135 Team ToTheMoon</div>
-               <div class="section" id="homework1">
-                  <a href="hw1/">homework1</a>
-                  <ul>
-                     <li>
-                        <p>Perl - CGI</p>
-                        <ul>
-                           <li><a href="/cgi-bin/perl-html-world.pl">Hello,Perl!</a></li>
-                           <li><a href="/cgi-bin/perl-json-world.pl">Hello,Perl! (JSON)</a></li>
-                           <li><a href="/cgi-bin/perl-env.pl">Environment Variables (Manually)</a></li>
-                           <li><a href="/cgi-bin/perl-env-pm.pl">Environment Variables (CGI.pm)</a></li>
-                           <li><a href="/cgi-bin/perl-get-echo.pl">GET Echo</a></li>
-                           <li><a href="/cgi-bin/perl-post-echo.pl">POST Echo</a></li>
-                           <li><a href="/cgi-bin/perl-general-echo.pl">General Echo</a></li>
-                           <li><a href="/cgi-bin/perl-sessions-1.pl">Sessioning page 1 </a></li>
-                           <li><a href="/cgi-bin/perl-sessions-2.pl">Sessioning page 2 </a></li>
-                           <li><a href="/cgi-bin/perl-destroy-session.pl">Destroy session</a></li>
-                        </ul>
-                     </li>
-                     
-                     <!-- <li>
-                        <p>C - CGI</p>
-                        <ul>
-                           <li><a href="/cgi-bin/c-hello-html-world.cgi">Hello,c!</a></li>
-                           <li><a href="/cgi-bin/c-hello-json-world.cgi">Hello,c! (JSON)</a></li>
-                           <li><a href="/cgi-bin/c-env.cgi">Environment Variables</a></li>
-                           <li><a href="/cgi-bin/c-get-echo.cgi">GET Echo</a></li>
-                           <li><a href="/cgi-bin/c-post-echo.cgi">POST Echo</a></li>
-                           <li><a href="/cgi-bin/c-general-request-echo.cgi">General Echo</a></li>
-                           <li><a href="/cgi-bin/c-sessions-1.cgi">Sessioning page 1 </a></li>
-                           <li><a href="/cgi-bin/c-sessions-2.cgi">Sessioning page 2 </a></li>
-                           <li><a href="/cgi-bin/c-destroy-session.cgi">Destroy session</a></li>
-                        </ul>
-                     </li> -->
-
-                     <li>
-                        <p>Python - CGI</p>
-                        <ul>
-                           <li><a href="/cgi-bin/py-hello-html-world.py">Hello,py!</a></li>
-                           <li><a href="/cgi-bin/py-hello-json-world.py">Hello,py! (JSON)</a></li>
-                           <li><a href="/cgi-bin/py-env.py">Environment Variables</a></li>
-                           <li><a href="/cgi-bin/py-get-echo.py">GET Echo</a></li>
-                           <li><a href="/cgi-bin/py-post-echo.py">POST Echo</a></li>
-                           
-                           <li><a href="/cgi-bin/c-general-request-echo.cgi">General Echo</a></li>
-                           <li><a href="/cgi-bin/py-sessions-1.py">Sessioning page 1 </a></li>
-                        </ul>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-   </body>
+        </div>
+    </body>
 </html>
