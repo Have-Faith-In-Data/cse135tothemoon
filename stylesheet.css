@@ -1,5 +1,4 @@
 html {
-	overflow: hidden;
 	height: 99%;
 }
 
@@ -15,7 +14,6 @@ body {
 	display: table;
 	height: 100%;
 	position: relative;
-	overflow: hidden;
 	width: 1000px;
 }
 
@@ -61,6 +59,7 @@ body {
 
 .section {
 	color: #000000;
+	display: blocs;
 	font-size: 13px;
 	margin: 1em auto;
 	width: 88%;
@@ -71,6 +70,10 @@ body {
 	vertical-align: middle;
 	background-color: #EFE4A0;
 	width: 98%;
+}
+
+.name {
+	text-align: left;
 }
 
 #box {
@@ -84,4 +87,22 @@ body {
 
 p {
 	text-align: left;
+}
+
+.sub{
+	float: left;
+	text-align: left;
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 0.5em;
+}
+
+.sub-block {
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 2em;
+}
+
+.sub-block > a {
+	display: block;
 }
