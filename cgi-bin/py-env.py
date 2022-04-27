@@ -14,8 +14,12 @@ print( "<body>")
 
 print( "<h1>Environment Variables</h1>")
 
-for i in os.environ.keys(): 
+# for i in os.environ.keys(): 
+#     print(i,":",os.environ[i],"<br />\n" )
+
+for i in os.environ: 
     print(i,":",os.environ[i],"<br />\n" )
+
 
 print( "</body>")
 print( "</html>")
