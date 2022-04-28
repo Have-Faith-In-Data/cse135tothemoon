@@ -6,7 +6,8 @@
   echo "<body>";
   unset($_COOKIE['username']);
   setcookie('username', null, -1, '/');
-  $_COOKIE['username'] = "";
+  setcookie('username', "");
+  // $_COOKIE['username'] = "";
   echo "<h1>Sessions destroyed</h1>";
   echo $_COOKIE['username'];
 
