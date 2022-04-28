@@ -10,9 +10,22 @@ import cgi, cgitb
 
 print( "Cache-Control: no-cache")
 print( "Content-type: text/html")
-username = sys.stdin.readlines() 
-if len(username) > 0: 
-    print("Set-Cookie: username=%s\n\n"%username)
+username = None 
+if 'HTTP_COOKIE' in os.environ: 
+    cookie =  os.environ["HTTP_COOKIE"]
+    cookies = cookie.split(";")
+    if len(cookies) >= 3: 
+        username = cookies[2]
+        name = username
+        if 'destroyed' in name: 
+            name = None 
+
+if name is None: 
+    username = sys.stdin.readlines() 
+if username is not None and len(username) > 0: 
+    print("Set-Cookie: username=%s\n"%username)
+else: 
+    print("\n")
 
 
 # Headers
