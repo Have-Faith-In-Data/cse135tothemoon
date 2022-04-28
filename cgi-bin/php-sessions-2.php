@@ -6,11 +6,15 @@
   echo "<body>";
 
   echo "<h1>Sessions Page 1</h1>";
-  $_SERVER['HTTP_COOKIE'] = $_POST['username'];
-  echo "<tr><td>Cookie:</td><td>".$_POST['username']."</td></tr>\n";
+
+  if (strcmp($_SERVER['HTTP_COOKIE'], "destoryed") != 0) {
+    echo "<tr><td>Cookie from Cookie:</td><td>".$_SERVER['HTTP_COOKIE']."</td></tr>\n";
+  }else {
+    echo "<tr><td>Cookie:</td><td>None</td></tr>\n";
+  }
 
   echo "<br />";
-  echo "<a href=\"/cgi-bin/php-sessions-2.php\">Session Page 2</a>";
+  echo "<a href=\"/cgi-bin/php-sessions-1.php\">Session Page 1</a>";
   echo "<br />";
   echo "<a href=\"../hw2/py-cgiform.html\">CGI Form</a>";
   echo "<br /><br />";
