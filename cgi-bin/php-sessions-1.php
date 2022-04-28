@@ -7,7 +7,7 @@
 
   echo "<h1>Sessions Page 1</h1>";
   $_COOKIE['username'] = $_POST['username'];
-  echo "<tr><td>Cookie:</td><td>".$_POST['username']."</td></tr>\n";
+  echo "<tr><td>Cookie:</td><td>".$_COOKIE['username']."</td></tr>\n";
 
   echo "<br />";
   echo "<a href=\"/cgi-bin/php-sessions-2.php\">Session Page 2</a>";

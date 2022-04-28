@@ -7,7 +7,7 @@
 
   echo "<h1>Sessions Page 2</h1>";
 
-  if (strcmp($_COOKIE['username'], "destoryed") != 0) {
+  if (isset($_COOKIE['username'], "")) {
     echo "<tr><td>Cookie from Cookie:</td><td>".$_COOKIE['username']."</td></tr>\n";
   }else {
     echo "<tr><td>Cookie:</td><td>None</td></tr>\n";
