@@ -3,6 +3,10 @@
 import sys
 import os 
 
+import cgi, cgitb 
+
+
+
 print( "Cache-Control: no-cache")
 print( "Content-type: text/html\n\n")
 
@@ -13,11 +17,24 @@ print("<body>")
 print("<h1>Python Sessions Page 2</h1>")
 print("<table>")
 
-if os.environ['HTTP_COOKIE'] != None and os.environ["HTTP_COOKIE"] == "destroyed": 
-    print("<tr><td>Cookie:</td><td>%s</td></tr>\n", os.environ["HTTP_COOKIE"] )
+
+name = None 
+if 'HTTP_COOKIE' in os.environ: 
+    cookie =  os.environ["HTTP_COOKIE"]
+    cookies = cookie.split(";")
+    username = cookies[2]
+    name = username
+
+    if 'destroyed' in name: 
+        name = None 
+
+
+if name is not None: 
+    print("<tr><td>Cookie:</td><td>%s</td></tr>\n"%name )
 else: 
     print("<tr><td>Cookie:</td><td>None</td></tr>\n")
 
+    
 # Links for other pages
 print("<br />")
 print("<a href=\"/cgi-bin/py-sessions-1.py\">Session Page 1</a>")
