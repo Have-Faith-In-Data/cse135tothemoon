@@ -1,0 +1,31 @@
+ Cache-Control: no-cache
+ Content-type: text/html
+
+ <html>
+ <head>
+ <title>Python Sessions</title>
+ </head>
+
+
+ <body>
+
+ <h1>Sessions Page 1</h1>
+ <form action="../cgi-bin/py-sessions-1.py" method="Post" id="form">
+    <label>
+        What's Your name?(py)
+        <input type='text' name='username' autocomplete='off'>
+        </label>
+        <input type='submit' value='Test Sessioning'>
+
+ </form>
+ <form action="../cgi-bin/php-sessions-1.php" method="Post" id="form">
+    <label>
+        What's Your name?(php)
+        <input type='text' name='username' autocomplete='off'>
+        </label>
+        <input type='submit' value='Test Sessioning'>
+
+ </form>
+
+</body>
+</html>
