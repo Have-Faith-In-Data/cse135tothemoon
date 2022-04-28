@@ -7,7 +7,7 @@
 
   echo "<h1>POST Message Body</h1>";
   foreach ($_POST as $key => $value) {
-        echo "Message [".$key."] Body:".$value;."\n<br/>";
+        echo "Message [".$key."] Body:".$value."\n<br/>";
     }
 
   echo "</body>";

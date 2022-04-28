@@ -6,8 +6,9 @@
   echo "<body>";
 
   echo "<h1>get echo</h1>";
-  // echo $_GET["query"]
-
+  foreach ($_GET as $key => $value) {
+        echo "Message [".$key."] Body:".$value."\n<br/>";
+    }
   echo "</body>";
   echo "</html>";
 ?>
