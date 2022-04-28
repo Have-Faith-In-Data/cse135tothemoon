@@ -12,15 +12,10 @@ print( "Cache-Control: no-cache")
 print( "Content-type: text/html")
 username = None 
 if 'HTTP_COOKIE' in os.environ: 
-    cookie =  os.environ["HTTP_COOKIE"]
-    cookies = cookie.split(";")
+    username =  os.environ["HTTP_COOKIE"]
     
-    for cookie in cookies: 
-        if 'destroyed' in cookie: 
-            name = ""
-            username = "" 
 
-if name is None: 
+if username is None: 
     username = sys.stdin.readlines() 
 if username is not None and len(username) > 0: 
     print("Set-Cookie: username=%s\n"%username)
@@ -40,10 +35,10 @@ print( "<h1>Sessions Page 1</h1>")
 
 
 print("<table>")
-if len(username) > 0 : 
+if len(username) > 0 and "destroyed" not in username : 
     print("<tr><td>Cookie:</td><td>",username,"</td></tr>\n")
-# elif "HTTP_COOKIE" in os.environ  and os.environ["HTTP_COOKIE"] != "destroyed":
-#     print("<tr><td>Cookie from Cookie:</td><td>",os.environ["HTTP_COOKIE"],"</td></tr>\n")
+elif "HTTP_COOKIE" in os.environ  and "destroyed" not in  os.environ["HTTP_COOKIE"]:
+    print("<tr><td>Cookie from Cookie:</td><td>",os.environ["HTTP_COOKIE"],"</td></tr>\n")
 else: 
     print("<tr><td>Cookie:</td><td>None</td></tr>\n")
 print("</table>")
