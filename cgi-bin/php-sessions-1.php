@@ -10,9 +10,9 @@
   if (strcmp($_POST['username'], "") != 0) {
     echo "<tr><td>Cookie:</td><td>".$_POST['username']."</td></tr>\n";
   } elseif (strcmp($_SERVER['HTTP_COOKIE'],"destoryed") != 0) {
-    echo "<tr><td>Cookie from Cookie:</td><td>".$_SERVER['HTTP_COOKIE']."</td></tr>\n";;
+    echo "<tr><td>Cookie from Cookie:</td><td>".$_SERVER['HTTP_COOKIE']."</td></tr>\n";
   }else {
-    echo "<tr><td>Cookie:</td><td>None</td></tr>\n"
+    echo "<tr><td>Cookie:</td><td>None</td></tr>\n";
   }
 
 
