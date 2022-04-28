@@ -14,11 +14,11 @@ username = None
 if 'HTTP_COOKIE' in os.environ: 
     cookie =  os.environ["HTTP_COOKIE"]
     cookies = cookie.split(";")
-    if len(cookies) >= 3: 
-        username = cookies[2]
-        name = username
-        if 'destroyed' in name: 
-            name = None 
+    
+    for cookie in cookies: 
+        if 'destroyed' in cookie: 
+            name = ""
+            username = "" 
 
 if name is None: 
     username = sys.stdin.readlines() 
@@ -42,8 +42,8 @@ print( "<h1>Sessions Page 1</h1>")
 print("<table>")
 if len(username) > 0 : 
     print("<tr><td>Cookie:</td><td>",username,"</td></tr>\n")
-elif "HTTP_COOKIE" in os.environ  and os.environ["HTTP_COOKIE"] != "destroyed":
-    print("<tr><td>Cookie from Cookie:</td><td>",os.environ["HTTP_COOKIE"],"</td></tr>\n")
+# elif "HTTP_COOKIE" in os.environ  and os.environ["HTTP_COOKIE"] != "destroyed":
+#     print("<tr><td>Cookie from Cookie:</td><td>",os.environ["HTTP_COOKIE"],"</td></tr>\n")
 else: 
     print("<tr><td>Cookie:</td><td>None</td></tr>\n")
 print("</table>")
