@@ -6,7 +6,7 @@
   echo "<body>";
 
   echo "<h1>Sessions Page 1</h1>";
-  $_SERVER['HTTP_COOKIE'] = $_POST['username'];
+  $_COOKIE['username'] = $_POST['username'];
   echo "<tr><td>Cookie:</td><td>".$_POST['username']."</td></tr>\n";
 
   echo "<br />";
